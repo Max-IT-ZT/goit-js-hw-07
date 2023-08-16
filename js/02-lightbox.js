@@ -14,7 +14,7 @@ const renderList = (arr) =>
     .join("");
 list.insertAdjacentHTML("beforeend", renderList(galleryItems));
 
-const gallery = new SimpleLightbox(".gallery a", {
+new SimpleLightbox(".gallery a", {
   captionsData: "alt",
   captionDelay: 250,
 });
